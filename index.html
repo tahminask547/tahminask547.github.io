@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tahmina Sultana — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;1,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F4EC;
+    --ink:#1E2A22;
+    --panel:#243329;
+    --panel-ink:#E9E4D6;
+    --gold:#B98A2E;
+    --rule:#D9D2BE;
+    --muted:#5C6960;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Work Sans',sans-serif;
+    line-height:1.6;
+  }
+  h1,h2,h3{
+    font-family:'Lora',serif;
+    font-weight:600;
+    margin:0;
+  }
+  .wrap{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    max-width:1000px;
+    margin:0 auto;
+    min-height:100vh;
+  }
+  /* Sidebar */
+  aside{
+    background:var(--panel);
+    color:var(--panel-ink);
+    padding:48px 32px;
+  }
+  .photo{
+    width:140px;height:140px;border-radius:50%;
+    margin:0 auto 22px;
+    overflow:hidden;
+    border:2px solid var(--gold);
+    display:flex;align-items:center;justify-content:center;
+    background:#33473A;
+  }
+  .photo img{width:100%;height:100%;object-fit:cover;display:block;}
+  .photo .fallback{
+    display:flex;align-items:center;justify-content:center;
+    width:100%;height:100%;
+    font-family:'Lora',serif;font-size:2.6rem;color:var(--gold);
+  }
+  aside h1{font-size:1.5rem;text-align:center;color:#fff;}
+  .role{
+    text-align:center;color:var(--gold);font-size:.92rem;
+    margin-top:6px;font-style:italic;font-family:'Lora',serif;
+  }
+  .side-section{margin-top:38px;}
+  .side-section h3{
+    font-size:.95rem;color:var(--gold);
+    border-bottom:1px solid rgba(233,228,214,.25);
+    padding-bottom:8px;margin-bottom:14px;
+  }
+  .side-section p, .side-section li{font-size:.88rem;color:var(--panel-ink);}
+  .side-section a{color:var(--panel-ink);text-decoration:none;border-bottom:1px dotted var(--gold);}
+  .side-section ul{list-style:none;margin:0;padding:0;}
+  .side-section li{margin-bottom:8px;}
+  .contact-line{display:flex;gap:8px;margin-bottom:10px;font-size:.88rem;}
+  .contact-line span:first-child{color:var(--gold);min-width:16px;}
+
+  /* Main */
+  main{padding:56px 52px;}
+  .objective{
+    font-family:'Lora',serif;font-style:italic;font-size:1.15rem;
+    color:#333;max-width:60ch;margin-bottom:46px;
+    border-left:3px solid var(--gold);padding-left:20px;
+  }
+  section{margin-bottom:44px;}
+  section h2{
+    font-size:1.3rem;margin-bottom:20px;
+    padding-bottom:8px;border-bottom:1px solid var(--rule);
+  }
+  .entry{margin-bottom:26px;}
+  .entry:last-child{margin-bottom:0;}
+  .entry-head{
+    display:flex;justify-content:space-between;align-items:baseline;
+    flex-wrap:wrap;gap:6px 16px;
+  }
+  .entry-title{font-family:'Lora',serif;font-weight:600;font-size:1.05rem;}
+  .entry-org{color:var(--muted);font-size:.92rem;}
+  .entry-date{color:var(--gold);font-size:.85rem;white-space:nowrap;}
+  .entry ul{margin:10px 0 0;padding-left:20px;}
+  .entry li{margin-bottom:6px;font-size:.95rem;}
+
+  .edu-item{
+    display:flex;gap:18px;margin-bottom:20px;
+    padding-bottom:20px;border-bottom:1px dashed var(--rule);
+  }
+  .edu-item:last-child{border-bottom:none;margin-bottom:0;padding-bottom:0;}
+  .edu-year{
+    font-family:'Lora',serif;font-weight:600;color:var(--gold);
+    min-width:52px;
+  }
+  .edu-degree{font-weight:500;}
+  .edu-detail{color:var(--muted);font-size:.92rem;margin-top:2px;}
+
+  .refs{
+    background:#fff;border:1px solid var(--rule);
+    padding:20px 24px;border-radius:4px;font-size:.92rem;
+  }
+  .refs strong{font-family:'Lora',serif;}
+
+  footer{
+    text-align:center;padding:26px;color:var(--muted);
+    font-size:.82rem;
+  }
+
+  @media (max-width:760px){
+    .wrap{grid-template-columns:1fr;}
+    main{padding:40px 24px;}
+    aside{padding:40px 24px;}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside>
+    <div class="photo">
+      <img src="Tahmina.jpg" alt="Tahmina Sultana"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="fallback" style="display:none;">TS</div>
+    </div>
+    <h1>Tahmina Sultana</h1>
+    <div class="role">Educator</div>
+
+    <div class="side-section">
+      <h3>Contact</h3>
+      <div class="contact-line"><span>&#9993;</span><a href="mailto:tahminask.ier@gmail.com">tahminask.ier@gmail.com</a></div>
+      <div class="contact-line"><span>&#8962;</span><span>97/4 West Madartek, Sobujbagh, Dhaka</span></div>
+    </div>
+
+    <div class="side-section">
+      <h3>Computer Skills</h3>
+      <p>Microsoft Office (Word, PowerPoint, Excel), Canva (basic)</p>
+    </div>
+
+    <div class="side-section">
+      <h3>Languages</h3>
+      <p>Bangla, English</p>
+    </div>
+  </aside>
+
+  <main>
+    <p class="objective">
+      Seeking an entry-level position in a dynamic organization — eager to bring
+      strong analytical, communication and research skills to work that supports
+      real organizational impact.
+    </p>
+
+    <section>
+      <h2>Work Experience</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <div>
+            <div class="entry-title">Intern Teacher</div>
+            <div class="entry-org">BCSIR School &amp; College — Dhanmondi, Dhaka, Bangladesh</div>
+          </div>
+          <div class="entry-date">Nov 2024 – Feb 2025</div>
+        </div>
+        <ul>
+          <li>Carried out full-scope instructional and classroom management duties as part of a structured academic internship under the University of Dhaka.</li>
+          <li>Planned and ran institutional events, including a major cultural program, handling logistics, scheduling and team coordination.</li>
+          <li>Assessed student performance, analyzed academic data and delivered structured feedback to improve learning outcomes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div class="edu-year">2025</div>
+        <div>
+          <div class="edu-degree">Master of Education (M.Ed)</div>
+          <div class="edu-detail">Institute of Education &amp; Research, University of Dhaka, Bangladesh — exam scheduled 2026</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2024</div>
+        <div>
+          <div class="edu-degree">Bachelor of Education (B.Ed)</div>
+          <div class="edu-detail">Institute of Education &amp; Research, University of Dhaka, Bangladesh — CGPA 3.44 / 4.00</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2020</div>
+        <div>
+          <div class="edu-degree">Higher Secondary Certificate (HSC), Business Studies</div>
+          <div class="edu-detail">Noakhali Government College, Noakhali, Bangladesh — GPA 5.00 / 5.00</div>
+        </div>
+      </div>
+      <div class="edu-item">
+        <div class="edu-year">2018</div>
+        <div>
+          <div class="edu-degree">Secondary School Certificate (SSC), Business Studies</div>
+          <div class="edu-detail">Protapgonj High School, Lakshmipur, Bangladesh — GPA 5.00 / 5.00</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Organizational Involvement</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <div>
+            <div class="entry-title">Executive Member (Content Writer)</div>
+            <div class="entry-org">IER Language &amp; Cultural Club (IERLCC), University of Dhaka</div>
+          </div>
+          <div class="entry-date">2022 – 2024</div>
+        </div>
+        <ul>
+          <li>Contributed to the planning and execution of club events, meetings and cultural programs.</li>
+          <li>Drafted and edited written content over a two-year tenure.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Reference</h2>
+      <div class="refs">
+        <strong>Khairul Islam</strong><br>
+        Professor, Institute of Education &amp; Research, University of Dhaka<br>
+        Phone: 01716304044 &nbsp;·&nbsp; Email: khairulislam@du.ac.bd
+      </div>
+    </section>
+  </main>
+</div>
+<footer>Tahmina Sultana — Dhaka, Bangladesh</footer>
+</body>
+</html>
